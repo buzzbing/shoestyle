@@ -1,0 +1,151 @@
+body{
+
+    height: 100%;
+    margin: 2%;
+    padding: 3%;
+
+    background-color: rgba(241, 197, 197, 0.719);
+    background-image: url('../images/bac2.jpg');
+    background-repeat: repeat;
+
+    
+}
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    
+}
+.wrapper-content{
+    flex: 0.5;
+    text-align: center;
+
+   
+
+}
+
+
+header{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: auto;
+    padding: 2%;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+
+h1{
+    
+    font-family: cursive;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+nav a{
+    
+    padding: 3%;
+    margin: 1%;
+    text-decoration: underline;
+    background-color: transparent;
+
+}
+
+
+
+h3{
+    font-family: cursive ;
+    font-weight: bold;
+}
+h2{
+    font-family: cursive ;
+    font-weight: bold;
+    color:#fff;
+}
+.text{
+
+    padding: 5%;
+    background-color:rgba(255,255,255,1);
+    margin: 2%;
+    
+    
+    
+}
+.picLink{
+    padding: 2%;
+    background-color:rgba(255,255,255,0.7);
+    margin: 2%;
+    text-align: center;
+    align-self: center;
+    
+}
+
+.picLink a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+
+}
+.link a{
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.7);
+
+}
+
+.card-container {
+    cursor: pointer;
+    height: 22em;
+    perspective: 600em;
+    position: relative;
+    width: 25em;
+    margin: 2%;
+    align-content: center;
+  }
+  .card {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    
+  }
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  .card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    
+    
+  }
+  .card .back {
+    
+    padding: 2%;
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+    transform: rotateY(180deg);
+    
+  }
+footer{
+    width: 100%;  
+    padding: 2%;
+    margin: 2%;
+    line-height: 20px;
+    text-align: center;
+    background-color:rgba(255,255,255,0.8);
+    flex-shrink: 0;    
+}
+@media only print{
+    main div .card .back{
+        
+        transform: none;
+    }
+}
